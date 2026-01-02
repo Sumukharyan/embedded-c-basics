@@ -1,17 +1,27 @@
 #include <stdio.h>
 #include "led.h"
 #include "led_fsm.h"
+#include "timer.h"
 
 static led_state_t current_state;
+static unsigned long last_transition_time;
 
 void led_fsm_init(void)
 {
     current_state = LED_STATE_OFF;
+    last_transition_time = timer_get_ms();
     led_off();
 }
 
 void led_fsm_update(void)
 {
+    unsigned long now = timer_get_ms();
+
+    if ((now - last_transition_time) < 1000)
+        return; // non-blocking wait
+
+    last_transition_time = now;
+
     switch (current_state)
     {
     case LED_STATE_OFF:

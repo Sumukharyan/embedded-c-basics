@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "led_fsm.h"
 
 int main(void)
@@ -8,10 +7,7 @@ int main(void)
     while (1)
     {
         led_fsm_update();
-
-        // Simulated delay
-        for (volatile int i = 0; i < 100000000; i++)
-            ;
+        // No blocking delay here
     }
 
     return 0;
