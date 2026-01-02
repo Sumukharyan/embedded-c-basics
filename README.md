@@ -31,3 +31,9 @@ hardware-independent way.
 - Implemented finite state machine (FSM) in Embedded C
 - Designed LED control logic using states and transitions
 - Structured application logic similar to RTOS task loops
+
+## Day 4
+- Implemented non-blocking software timer logic in Embedded C
+- Replaced blocking delays with time-based state transitions
+- Designed FSM suitable for RTOS task execution
+
