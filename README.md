@@ -38,7 +38,6 @@ hardware-independent way.
 - Replaced blocking delays with time-based state transitions
 - Designed FSM suitable for RTOS task execution
 
-=======
 
 ## Day 5
 
