@@ -19,3 +19,9 @@ hardware-independent way.
 - RTOS integration
 - MQTT-based communication
 - Hardware porting (STM32 / ESP32)
+
+## Day 2
+
+- Implemented multi-file Embedded C project structure
+- Used header files for hardware abstraction
+- Designed LED module scalable to real GPIO hardware
