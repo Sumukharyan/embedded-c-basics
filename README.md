@@ -25,3 +25,9 @@ hardware-independent way.
 - Implemented multi-file Embedded C project structure
 - Used header files for hardware abstraction
 - Designed LED module scalable to real GPIO hardware
+
+## Day 3
+
+- Implemented finite state machine (FSM) in Embedded C
+- Designed LED control logic using states and transitions
+- Structured application logic similar to RTOS task loops

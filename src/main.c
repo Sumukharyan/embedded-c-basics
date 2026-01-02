@@ -1,14 +1,18 @@
 #include <stdio.h>
-#include "led.h"
+#include "led_fsm.h"
 
 int main(void)
 {
-    led_init();
+    led_fsm_init();
 
-    led_on();
-    printf("Delay...\n");
+    while (1)
+    {
+        led_fsm_update();
 
-    led_off();
+        // Simulated delay
+        for (volatile int i = 0; i < 100000000; i++)
+            ;
+    }
 
     return 0;
 }
