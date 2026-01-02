@@ -44,3 +44,7 @@ void led_fsm_update(void)
         break;
     }
 }
+void led_fsm_task(void)
+{
+    led_fsm_update();
+}

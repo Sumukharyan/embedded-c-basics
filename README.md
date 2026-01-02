@@ -33,7 +33,15 @@ hardware-independent way.
 - Structured application logic similar to RTOS task loops
 
 ## Day 4
+
 - Implemented non-blocking software timer logic in Embedded C
 - Replaced blocking delays with time-based state transitions
 - Designed FSM suitable for RTOS task execution
 
+=======
+
+## Day 5
+
+- Implemented cooperative task scheduler in Embedded C
+- Simulated multi-tasking without RTOS
+- Prepared application structure for FreeRTOS migration

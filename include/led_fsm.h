@@ -12,3 +12,4 @@ void led_fsm_init(void);
 void led_fsm_update(void);
 
 #endif
+void led_fsm_task(void);
